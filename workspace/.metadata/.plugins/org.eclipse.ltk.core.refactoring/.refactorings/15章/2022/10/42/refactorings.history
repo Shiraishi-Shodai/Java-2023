@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;15章/src/正規表現1&apos; を &apos;正規表現&apos; に変更します" description="リソース &apos;正規表現1&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/正規表現1" name="正規表現" stamp="1665621172766" updateReferences="true"/>
+</session>

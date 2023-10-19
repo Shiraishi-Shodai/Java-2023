@@ -1,0 +1,5 @@
+package 第1章.Comparator;
+
+public class NameComparator {
+
+}

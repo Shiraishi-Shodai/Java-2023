@@ -1,0 +1,12 @@
+package stack;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+public class インクリメントデクリメント {
+	public static void main(String[] args) {
+		Map<String,Integer> map = new HashMap<>();
+		map.put("ken",100);
+		map.put("taka",100);
+		List<Integer> list = map.remove("ken");
+	}
+}

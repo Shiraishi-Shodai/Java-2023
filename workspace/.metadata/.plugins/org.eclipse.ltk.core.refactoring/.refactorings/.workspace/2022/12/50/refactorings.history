@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="リソース &apos;Java実践編/src/第6章/ファイル操作の確認/Main.java&apos; を削除" deleteContents="false" description="リソース &apos;Java実践編/src/第6章/ファイル操作の確認/Main.java&apos; を削除" element1="/Java実践編/src/第6章/ファイル操作の確認/Main.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1670461159134"/>&#x0A;<refactoring comment="リソース &apos;main&apos; を削除" deleteContents="false" description="リソース &apos;main&apos; を削除" element1="/main" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1670461171521"/>
+</session>

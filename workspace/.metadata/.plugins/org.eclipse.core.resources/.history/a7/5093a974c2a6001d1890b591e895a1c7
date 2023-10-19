@@ -1,0 +1,27 @@
+package 第1章.章末問題;
+
+import java.sql.Date;
+
+public class Book {
+	private String title;
+	private Date publishDate;
+	private String comment;
+	
+	public boolean equal(Object o) {
+		if(this == o) {
+			return false;
+		}
+		if(o == null) {
+			return false;
+		}
+		if(!(o instanceof Book)) {
+			return false;
+		}
+		Book b = (Book)o;
+		if(!this.title.equals(b.title) || this.publishDate != b.publishDate) {
+			return false;
+		}
+		return true;
+	}
+	
+}

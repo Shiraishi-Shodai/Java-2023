@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース &apos;過去問１/src/過去問１/過去問１.java&apos; を削除" deleteContents="false" description="リソース &apos;過去問１/src/過去問１/過去問１.java&apos; を削除" element1="/過去問１/src/過去問１/過去問１.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1661702714145"/>
+</session>

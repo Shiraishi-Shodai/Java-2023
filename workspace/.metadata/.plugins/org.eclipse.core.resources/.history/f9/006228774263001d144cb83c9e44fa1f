@@ -1,0 +1,17 @@
+package stack;
+
+public class インクリメントデクリメント {
+	public static void main(String[] args) {
+		int corsor = 0;
+		
+		int count = 0;
+		while(count<2) {
+			System.out.println(corsor(corsor));
+			count++;
+		}
+	}
+	public static int corsor(int corsor) {
+		
+		return ++corsor;
+	}
+}

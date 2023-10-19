@@ -1,0 +1,27 @@
+package 過去問１;
+
+public class 練習 {
+	public static void main(String[] args) {
+		String end;
+		int start = 0;
+		int count = 0;
+		int count2 = 1;
+
+			System.out.println("学生情報を入力してください");
+			System.out.println("性別(1...男性,0...女性)");
+		do {
+			System.out.println(count2+"人目入力");
+			count2++;
+			System.out.print("氏名:");
+			end = new java.util.Scanner(System.in).nextLine();
+			System.out.print("性別:");
+			start = new java.util.Scanner(System.in).nextInt();
+			if(start==1) {
+				count++;
+			}
+		}while(!end.equals("END"));
+		
+		System.out.print("端子生徒の人数は"+count+"名です");
+
+	}
+}

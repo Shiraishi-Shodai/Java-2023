@@ -1,0 +1,27 @@
+package 過去問１;
+
+public class 練習 {
+	public static void main(String[] args) {
+//		int end;
+//		double start = 0;
+		int bmi = 0;
+//		int count = 0;
+		double height = 175.5; //身長 cm 
+		double weight = 65.5; //体重 kg 
+		System.out.println("身長は"+height+"cm");
+		System.out.println("体重は"+weight+"kg");
+		bmi = (int)pra.BmiCheck(height,weight);
+			System.out.println("BMIは"+bmi+"です");
+		double bm2 = bmi;
+		System.out.println(bm2);
+		if(bmi>18.5) {
+			System.out.println("体格はやせすぎです");
+		}
+
+
+
+			
+
+
+	}
+}

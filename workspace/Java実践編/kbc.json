@@ -1,0 +1,28 @@
+{
+	"class1": {
+		"name": "ITエンジニア科3年制",
+		"grade":1,
+		"teacher":"須賀康行",
+		"student1": {
+			"name": "山田太郎",
+			"no":1
+		},
+		"student2": {
+ 			"name": "鈴木花子",
+			"no":2
+		}
+	},
+	"class2": {
+		"name": "ITエンジニア科3年制",
+		"grade":2,
+		"teacher":"山本篤史",
+		"student1": {
+			"name": "秋元武",
+			"no":1
+		},
+		"student2": {
+ 			"name": "渡辺博美",
+			"no":2
+		}
+	}
+}

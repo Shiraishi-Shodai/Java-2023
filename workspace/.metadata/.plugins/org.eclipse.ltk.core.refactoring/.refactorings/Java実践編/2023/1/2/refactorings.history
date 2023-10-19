@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="&apos;ehime.txt, etc.txt, in.txt&apos; を &apos;Java実践編&apos; に移動" description="3 個のリソースを &apos;Java実践編&apos; に移動" destination="/Java実践編" element1="src/ehime.txt" element2="src/etc.txt" element3="src/in.txt" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="3" stamp="1673485254760" updateReferences="true"/>&#x0A;<refactoring comment="&apos;in.csv&apos; を &apos;Java実践編&apos; に移動" description="&apos;in.csv&apos; を &apos;Java実践編&apos; に移動" destination="/Java実践編" element1="src/第７章/in.csv" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1673493133623" updateReferences="true"/>
+</session>

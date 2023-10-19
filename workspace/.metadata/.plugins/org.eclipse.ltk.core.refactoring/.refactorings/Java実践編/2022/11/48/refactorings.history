@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="リソース名 &apos;Java実践編/src/第二章&apos; を &apos;第2章&apos; に変更します" description="リソース &apos;第二章&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/第二章" name="第2章" stamp="1669001000104" updateReferences="true"/>&#x0A;<refactoring comment="リソース名 &apos;Java実践編/src/第3章/オリジナルインターフェース&apos; を &apos;オリジナル関数インターフェース&apos; に変更します" description="リソース &apos;オリジナルインターフェース&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/第3章/オリジナルインターフェース" name="オリジナル関数インターフェース" stamp="1669266709316" updateReferences="true"/>
+</session>

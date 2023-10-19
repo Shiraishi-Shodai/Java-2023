@@ -1,0 +1,12 @@
+package 過去問１;
+
+public class 過去問１ {
+	
+		public double BmiCheck(double h,double w) {
+			return h/w/w;
+		}
+		public double WeightCheck(double b,double h) {
+			return BmiCheck(b,h)*h*h;
+		}
+
+}

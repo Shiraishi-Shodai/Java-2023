@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;leavetime1.txt&apos; を &apos;自由演習&apos; に移動" description="&apos;leavetime1.txt&apos; を &apos;自由演習&apos; に移動" destination="/自由演習" element1="/Java実践編2/leavetime1.txt" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1675499310866" updateReferences="true"/>
+</session>

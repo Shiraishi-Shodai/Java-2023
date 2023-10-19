@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;章末問題/src/Palaglagh10/Patent.java&apos; を &apos;Asset.java&apos; に変更します" description="リソース &apos;Patent.java&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Palaglagh10/Patent.java" name="Asset.java" stamp="1662347275856" updateReferences="true"/>
+</session>

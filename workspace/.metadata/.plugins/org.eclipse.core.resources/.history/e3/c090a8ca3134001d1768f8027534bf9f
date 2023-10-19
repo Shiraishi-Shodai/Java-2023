@@ -1,0 +1,23 @@
+import static java.lang.System.*;
+public class PrintAsterisk3 {
+	public static void main (String []args) {
+		
+		out.print("複数の長方形を表示");
+		out.print("横幅:");;
+		int width = new java.util.Scanner(System.in).nextInt();
+		out.print("高さ:");;
+		int height = new java.util.Scanner(System.in).nextInt();
+		out.print("個数:");;
+		int number = new java.util.Scanner(System.in).nextInt();
+		
+		for(int i = 0;i<height;i++) {
+			for(int j = 0;j<number;j++) {
+				for(int k = 0;k<width;k++) {
+					out.print("*");
+				}
+				out.print(" ");
+			}
+			out.print("");
+		}
+	}	
+}

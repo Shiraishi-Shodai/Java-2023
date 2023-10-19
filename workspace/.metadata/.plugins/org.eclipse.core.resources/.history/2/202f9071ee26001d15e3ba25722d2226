@@ -1,0 +1,19 @@
+package 過去問１;
+
+public class pra {
+
+double bmi;
+//double h;
+//double w;
+//	public pra(double h,double w) {
+//		this.h = h;
+//		this.w = w;
+//	}
+	public static double BmiCheck(double h,double w) {
+		h = h/100;
+		return w/h/h;
+	}
+	public static double WeightCheck(double b,double h) {
+		return BmiCheck(b,h)*h*h;
+	}
+}

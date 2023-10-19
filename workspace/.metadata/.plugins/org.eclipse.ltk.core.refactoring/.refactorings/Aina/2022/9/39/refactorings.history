@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;omikuzi.java&apos; を &apos;src&apos; に移動" description="&apos;omikuzi.java&apos; を &apos;src&apos; に移動" destination="src" element1="/自由演習/src/omikuzi.java" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1663853150035" updateReferences="true"/>
+</session>

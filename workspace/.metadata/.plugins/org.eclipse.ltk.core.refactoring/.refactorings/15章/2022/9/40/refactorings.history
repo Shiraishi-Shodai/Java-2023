@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;StringExample1.java&apos; を &apos;文字列の書式整形&apos; に移動" description="&apos;StringExample1.java&apos; を &apos;文字列の書式整形&apos; に移動" destination="src/文字列の書式整形" element1="src/StringExample1.java" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1664431370723" updateReferences="true"/>
+</session>

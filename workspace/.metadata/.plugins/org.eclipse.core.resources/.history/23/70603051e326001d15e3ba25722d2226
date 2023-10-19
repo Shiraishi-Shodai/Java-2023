@@ -1,0 +1,28 @@
+package 過去問１;
+
+public class 練習 {
+	public static void main(String[] args) {
+		System.out.println("基数表示プログラム");
+		System.out.print("開始番号を入力してください：");
+		int start = new java.util.Scanner(System.in).nextInt();
+		System.out.print("終了番号を入力してください：");
+		int end = new java.util.Scanner(System.in).nextInt();
+		while((start>end)){
+			System.out.println("番号入力エラー!!");
+			System.out.println("開始番号は終了番号より小さい数字を入力してください");
+		}
+			System.out.println("表示開始");
+			if(start%2==1) {
+				System.out.println(start);
+			}else {
+				for(int i = start;i<end;i+=2) {
+					if(i==start) {
+						System.out.println(start+1);
+					}else {
+						System.out.println(i);
+
+					}
+				}
+			}
+	}
+}

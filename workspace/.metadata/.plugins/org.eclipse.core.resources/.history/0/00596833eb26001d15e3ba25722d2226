@@ -1,0 +1,33 @@
+package 過去問１;
+
+public class 過去問１ {
+	public static void main(String[] args) {
+		int number;
+		int number2;
+		
+		
+		do {
+			System.out.println("開始番号を入力してください");
+			number = new java.util.Scanner(System.in).nextInt();
+			System.out.println("終了番号を入力してください");
+			number2 = new java.util.Scanner(System.in).nextInt();
+		if(number<number2) {
+			System.out.print("表示開始 ");
+			for(int i = 1;number<number2;) {
+				number+=i;
+				if(number%2>0) {
+				System.out.println(number);
+				}
+				
+			}
+		} else {
+			System.out.print("番号入力エラー!!! ");
+			System.out.println("開始番号は終了番号より小さい数字を入力してください ");
+			}
+			
+		}while(number>number2);
+		
+		
+	}
+
+}

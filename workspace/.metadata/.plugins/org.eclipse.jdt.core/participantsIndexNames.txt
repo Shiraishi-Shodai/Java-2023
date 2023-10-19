@@ -1,0 +1,17 @@
+INDEX VERSION 1.131
+C:\pleiades\2022-03\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\176456690.index
+\WebProject02\src\main\java
+C:\pleiades\2022-03\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1830449020.index
+\WebProject02\src\main\java
+C:\pleiades\2022-03\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2872831196.index
+\servlet_test\src\main\java
+C:\pleiades\2022-03\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1136660569.index
+\Web01\src\main\java
+C:\pleiades\2022-03\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1495193718.index
+\WebProject01\src\main\java
+C:\pleiades\2022-03\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2515058574.index
+\SampleMVC\src\main\java
+C:\pleiades\2022-03\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3235362842.index
+\WebProject04\src\main\java
+C:\pleiades\2022-03\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\850506151.index
+\WebProject03\src\main\java

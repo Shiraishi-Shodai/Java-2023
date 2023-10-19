@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;out.dat&apos; を &apos;Java実践編2&apos; に移動" description="&apos;out.dat&apos; を &apos;Java実践編2&apos; に移動" destination="/Java実践編2" element1="/Java実践編/out.dat" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1676376024392" updateReferences="true"/>
+</session>

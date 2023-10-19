@@ -1,0 +1,33 @@
+package 第1章.Comparator;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Practice70 {
+	public static void main(String[] args) {
+		List<Student> list = new ArrayList<Student>();
+		Student s1 = new Student(1, "河原太郎", "松山市", 2000, 1, 29);
+		Student s2 = new Student(2, "河原太郎", "宇和島市", 2000, 1, 20);
+		Student s3 = new Student(3, "河原太朗", "松山市", 2000, 5, 23);
+		Student s4 = new Student(4, "河原太郎", "松山市", 1999, 10, 11);
+		list.add(s1);
+		list.add(s2);
+		list.add(s3);
+		list.add(s4);
+
+		System.out.println("ソート前：");
+		for (Student a : list) {
+			System.out.println(a);
+		}
+
+		//①リストの内容を日付の昇順にソート
+		Collections.sort(list,new YmdComparator());
+		
+		System.out.println("ソート後：");
+		for (Student a : list) {
+			System.out.println(a);
+		}
+	}
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;Animal.java, Cat.java, Dog.java, Lion.java&apos; を &apos;src&apos; に移動" description="4 個のリソースを &apos;src&apos; に移動" destination="src" element1="/Practice46/src/Animal.java" element2="/Practice46/src/Cat.java" element3="/Practice46/src/Dog.java" element4="/Practice46/src/Lion.java" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="4" stamp="1661468022190" updateReferences="true"/>
+</session>

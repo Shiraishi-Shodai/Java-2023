@@ -1,0 +1,13 @@
+package stack;
+import java.util.List;
+import java.util.ArrayList;
+public class インクリメントデクリメント {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<>();
+		if(list==null) {
+			System.out.println("null");
+		}else if(list.isEmpty()) {
+			System.out.println("empty");
+		}
+	}
+}

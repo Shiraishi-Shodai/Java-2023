@@ -1,0 +1,50 @@
+package play;
+
+public class play01 {
+	public static void main(String[] args) {
+		int year = new java.util.Scanner(System.in).nextInt();
+		int month = new java.util.Scanner(System.in).nextInt();
+		int day = new java.util.Scanner(System.in).nextInt();
+
+	
+	String week[] = {"月","火","水","木","金","土","日"};
+	
+	int  mon1[] = new int []{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	
+	int i = 0;
+	int a = 0;
+	
+	while(year-1 > a ){
+	if((a % 4 == 0 && a % 100 != 0)||(a % 400 == 0)) {
+		i++;
+
+	 }
+	a++;
+		
+	}
+	//System.out.println(i);
+	
+	int n = 0;
+	for(int plus = 0;plus<month;plus++) {
+		n += mon1[plus];
+		
+	}
+	//System.out.println(n+day);
+	
+	int last = (year - 1899)+i;
+	
+	int weeked 
+	
+	int w = 0;
+	while(weeked>w) {
+		w++;
+	}
+	System.out.println(year +"年"+ month +"月"+ day+ "日は"+week[w]+"曜日です");
+			
+	
+	
+	
+	
+	}
+
+}

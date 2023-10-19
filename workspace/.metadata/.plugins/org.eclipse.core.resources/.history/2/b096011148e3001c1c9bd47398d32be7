@@ -1,0 +1,28 @@
+
+package 二次元配列課題;
+
+public class 二次元配列課題 {
+	public static void main (String [] args) {
+		
+		
+		
+		System.out.print("クラス数");
+		int classNum = new java.util.Scanner(System.in).nextInt();
+		System.out.print(classNum+"組の人数：");
+		int classmate = new java.util.Scanner(System.in).nextInt();
+		int[] subject = new int[classmate];
+		
+		for(int i = 0;i<classmate;i++) {
+			System.out.print((classNum+1)+"組"+i+"番の点数:");
+			int pon = new java.util.Scanner(System.in).nextInt();
+			
+			
+		}
+		
+		//int class = new java.util.Scanner(System.in).nextInt();
+		
+		int[][] point = new int[classNum][];
+		
+		
+	}
+}

@@ -1,0 +1,24 @@
+<kbc>
+	<teacher>
+		<name>須賀康行</name>
+		<class>ITエンジニア科</class>
+		<grade>1</grade>
+	</teacher>
+	<student>
+		<name>山田太郎</name>
+		<class>ITエンジニア科</class>
+		<grade>1</grade>
+		<no>2</no>
+	</student>
+	<student>
+		<name>鈴木花子</name>
+		<class>ITエンジニア科</class>
+		<grade>1</grade>
+		<no>2</no>
+	</student>
+	<teacher>
+		<name>那須道生</name>
+		<class>ITエンジニア科</class>
+		<grade>4</grade>
+	</teacher>
+</kbc>
