@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="リソース名 &apos;UranaiServlet&apos; を &apos;Uranai&apos; に変更します" description="リソース &apos;UranaiServlet&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/UranaiServlet" name="Uranai" stamp="1682306319873" updateReferences="true"/>&#x0A;<refactoring comment="リソース名 &apos;Fow&apos; を &apos;Forward&apos; に変更します" description="リソース &apos;Fow&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Fow" name="Forward" stamp="1682313672410" updateReferences="true"/>
+</session>

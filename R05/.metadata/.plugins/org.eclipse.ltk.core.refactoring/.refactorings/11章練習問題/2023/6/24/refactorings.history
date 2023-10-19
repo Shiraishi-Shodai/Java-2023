@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;11章練習問題/src/main/java/listener/Listener.java&apos; を &apos;NoAppScopeListener.java&apos; に変更します" description="リソース &apos;Listener.java&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/listener/Listener.java" name="NoAppScopeListener.java" stamp="1686539821286" updateReferences="true"/>
+</session>

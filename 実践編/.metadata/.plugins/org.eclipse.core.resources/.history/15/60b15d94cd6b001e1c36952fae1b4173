@@ -1,0 +1,84 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+%>
+<%@ page import="java.io.IOException" %>
+<%@ page import="java.net.URLConnection" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %>
+
+<!DOCTYPE html>
+<html>
+<%
+    Connection conn = null;
+    Statement stmt = null;
+    String id = "";
+    String title = "";
+    String author = "";
+    String date = "";
+    String file = "";
+    try {
+        Class.forName("org.mariadb.jdbc.Driver");
+        conn = DriverManager.getConnection(
+                "jdbc:mariadb://localhost/gallery", "gallery", "password");
+        stmt = conn.createStatement();
+        String sql = "SELECT `id`,`title`,`author`,`date`,`file` FROM `photos` WHERE `id` = '"
+        				+ request.getParameter("id") + "'";
+        ResultSet hrs = stmt.executeQuery(sql);
+        hrs.next();
+        id = hrs.getString("id");
+        title = hrs.getString("title");
+        author = hrs.getString("author");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd (E) HH:mm:ss");
+        date = sdf.format(new Date(hrs.getInt("date")*1000L));
+        file = hrs.getString("file");
+     } catch (SQLException se) {
+        //Handle errors for JDBC
+        se.printStackTrace();
+     } catch (Exception e) {
+        //Handle errors for Class.forName
+        e.printStackTrace();
+     } finally {
+        //finally block used to close resources
+        try {
+            if (stmt != null) {
+                conn.close();
+            }
+        } catch (SQLException se) {} // do nothing
+        try {
+            if (conn != null) {
+                conn.close();
+            }
+        } catch (SQLException se) {
+            se.printStackTrace();
+        } //end finally try
+    } //end try
+%>
+<head>
+<meta charset="UTF-8">
+<title>Viewer Page</title>
+</head>
+<body>
+<div align="center">
+<h1>Viewer Page</h1>
+<a href="#" onclick="history.go(-1)">戻る</a><br>
+<hr>
+<table>
+<tbody>
+<tr><td width='540' align='center' valign='top'>
+<h2><%=title %></h2>
+<img width='540' border='0' src='DPImage?id=<%=id %>'><br><br>
+by <%=author %><br>
+<%=date %></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<a href="#" onclick="history.go(-1)">戻る</a>
+</div>
+</body>
+</html>

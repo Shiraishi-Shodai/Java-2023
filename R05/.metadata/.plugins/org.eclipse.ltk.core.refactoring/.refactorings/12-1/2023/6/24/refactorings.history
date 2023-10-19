@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;footer.jsp, includeTag.jsp&apos; を &apos;webapp&apos; に移動" description="2 個のリソースを &apos;webapp&apos; に移動" destination="src/main/webapp" element1="src/main/webapp/WEB-INF/lib/footer.jsp" element2="src/main/webapp/WEB-INF/lib/includeTag.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1686544340161" updateReferences="true"/>
+</session>

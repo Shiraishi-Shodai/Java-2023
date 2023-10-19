@@ -1,0 +1,265 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Photo;
+
+public class PhotosDAO {
+	// データベース接続に使用する情報
+	private final String JDBC_URL = "jdbc:mariadb://localhost/gallery";
+	private final String DB_USER = "gallery";
+	private final String DB_PASS = "password";
+
+	public PhotosDAO() {
+		try {
+			Class.forName("org.mariadb.jdbc.Driver");
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public List<Photo> findAll() {
+		return findPage(0, 5000, 0);
+	}
+	public List<Photo> findPage(int pg, int lm, int od) {
+		String[] order = {	"`date` DESC",
+							"`date` ASC",
+							"`title` ASC",
+							"`u_author_kana` ASC"};
+		List<Photo> photoList = new ArrayList<Photo>();
+
+		// データベース接続
+		try (Connection conn = DriverManager.getConnection(
+				JDBC_URL, DB_USER, DB_PASS)) {
+
+			// SELECT文の準備
+			String sql 	= "SELECT `id`, `title`, `u_author`, `date`, `file` "
+						+ "FROM `photos` JOIN `users` ON `author` = `u_id` ORDER BY "
+						+ order[od]
+						+ " LIMIT "
+						+ lm
+						+ " OFFSET "
+						+ (lm * pg);
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+
+			// SELECTを実行
+			ResultSet rs = pStmt.executeQuery();
+
+			// SELECT文の結果をArrayListに格納
+			while (rs.next()) {
+				int id = rs.getInt("id");
+				String title = rs.getString("title");
+				String author = rs.getString("u_author");
+				int date = rs.getInt("date");
+				String file = rs.getString("file");
+				Photo photo = new Photo(id, title, author, date, file);
+				photoList.add(photo);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+		return photoList;
+	}
+
+	public List<Photo> findPageByAuthor(int pg, int lm, int od, int au) {
+		String[] order = {	"`date` DESC",
+							"`date` ASC",
+							"`title` ASC",
+							"`u_author_kana` ASC"};
+		List<Photo> photoList = new ArrayList<Photo>();
+
+		// データベース接続
+		try (Connection conn = DriverManager.getConnection(
+				JDBC_URL, DB_USER, DB_PASS)) {
+
+			// SELECT文の準備
+			String sql 	= "SELECT `id`, `title`, `u_author`, `date`, `file` "
+						+ "FROM `photos` JOIN `users` ON `author` = `u_id` "
+						+ "WHERE `author` = " + au
+						+ " ORDER BY "
+						+ order[od]
+						+ " LIMIT "//Im件取り出し
+						+ lm
+						+ " OFFSET "
+						+ (lm * pg);	//Im*pg番目の行から取得
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+
+			// SELECTを実行
+			ResultSet rs = pStmt.executeQuery();
+
+			// SELECT文の結果をArrayListに格納
+			while (rs.next()) {
+				int id = rs.getInt("id");
+				String title = rs.getString("title");
+				String author = rs.getString("u_author");
+				int date = rs.getInt("date");
+				String file = rs.getString("file");
+				Photo photo = new Photo(id, title, author, date, file);
+				photoList.add(photo);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+		return photoList;
+	}
+
+	public Photo findById(int pid) {
+		Photo photo = null;
+
+		// データベース接続
+		try (Connection conn = DriverManager.getConnection(
+				JDBC_URL, DB_USER, DB_PASS)) {
+
+			// SELECT文の準備
+			String sql 	= "SELECT `id`,`title`,`u_author`,`date`,`file` "
+						+ "FROM `photos`  JOIN `users` on `author` = `u_id` "
+						+ "WHERE `id` = '"
+						+ pid
+						+ "'";
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+
+			// SELECTを実行
+			ResultSet rs = pStmt.executeQuery();
+
+			// SELECT文の結果をArrayListに格納
+			if (rs.next()) {
+				int id = rs.getInt("id");
+				String title = rs.getString("title");
+				String author = rs.getString("u_author");
+				int date = rs.getInt("date");
+				String file = rs.getString("file");
+				photo = new Photo(id, title, author, date, file);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		return photo;
+	}
+
+	public int countAll() {
+		int rows = 0;
+
+		// データベース接続
+		try (Connection conn = DriverManager.getConnection(
+				JDBC_URL, DB_USER, DB_PASS)) {
+
+			// SELECT文の準備
+			String sql 	= "SELECT count(*) AS 'rows' "
+						+ "FROM `photos`";
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+
+			// SELECTを実行
+			ResultSet rs = pStmt.executeQuery();
+
+			// SELECT文の結果から行数を格納
+			if (rs.next()) {
+				rows = rs.getInt("rows");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return rows;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return rows;
+		}
+		return rows;
+	}
+
+	public int countByAuthor(int au) {
+		int rows = 0;
+
+		// データベース接続
+		try (Connection conn = DriverManager.getConnection(
+				JDBC_URL, DB_USER, DB_PASS)) {
+
+			// SELECT文の準備
+			String sql 	= "SELECT count(*) AS 'rows' "
+						+ "FROM `photos` WHERE `author` = " + au;
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+
+			// SELECTを実行
+			ResultSet rs = pStmt.executeQuery();
+
+			// SELECT文の結果から行数を格納
+			if (rs.next()) {
+				rows = rs.getInt("rows");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return rows;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return rows;
+		}
+		return rows;
+	}
+
+	public boolean create(Photo photo) {
+		// データベース接続
+		try (Connection conn = DriverManager.getConnection(
+				JDBC_URL, DB_USER, DB_PASS)) {
+
+			// INSERT文の準備(idは自動連番なので指定しなくてよい）
+			String sql = "INSERT INTO `photos`(`title`, `author`, `date`, `file`, `image` ) VALUES(?, ?, ?, ?, ?)";
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+			// INSERT文中の「?」に使用する値を設定しSQLを完成
+			pStmt.setString(1, photo.getTitle());
+			pStmt.setInt(	2, photo.getId());
+			pStmt.setInt(	3, photo.getDate());
+			pStmt.setString(4, photo.getFile());
+			pStmt.setBytes(	5, photo.getImage());
+
+			// INSERT文を実行
+			int result = pStmt.executeUpdate();
+
+			if (result != 1) {
+				return false;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+	public boolean updateTitle(Photo photo) {
+		// データベース接続
+		try (Connection conn = DriverManager.getConnection(
+				JDBC_URL, DB_USER, DB_PASS)) {
+
+			// UPDATE文の準備(idは自動連番なので指定しなくてよい）
+			String sql = 	"UPDATE `photos`set`title` = ? "
+							+"WHERE `id` = ?";
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+
+			// UPDATE中の「?」に使用する値を設定しSQLを完成
+			pStmt.setString(1, photo.getTitle());
+			pStmt.setInt(2, photo.getId());
+
+			// UPDATE文を実行
+			int result = pStmt.executeUpdate();
+
+			if (result != 1) {
+				return false;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+}
+

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="&apos;jso&apos; を &apos;WEB-INF&apos; に移動" description="&apos;jso&apos; を &apos;WEB-INF&apos; に移動" destination="src/main/webapp/WEB-INF" element1="src/main/java/jso" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1682313723603" updateReferences="true"/>&#x0A;<refactoring comment="リソース名 &apos;Forward/src/main/webapp/WEB-INF/jso&apos; を &apos;jsp&apos; に変更します" description="リソース &apos;jso&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/jso" name="jsp" stamp="1682313732250" updateReferences="true"/>
+</session>

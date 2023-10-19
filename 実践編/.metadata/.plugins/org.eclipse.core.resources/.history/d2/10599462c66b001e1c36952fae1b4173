@@ -1,0 +1,6 @@
+package model;
+
+//年齢はデータベースに保存せず、生年月日をデータベースに保存する
+public class User {
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\pleiades\2022-03\ŽÀ‘H•Ò\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2956642501.index
+3186400932.index

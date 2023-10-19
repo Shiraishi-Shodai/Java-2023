@@ -1,0 +1,13 @@
+package model;
+
+//DBのphotoテーブルのデータを持つ
+//テーブルとモデルは必ずしも1対1になるわけではない
+public class Photo {
+
+	private int id;
+	private String title;
+//	private Date date;
+	private String author;	//投稿者
+	private String file;	//ファイル名
+	
+}

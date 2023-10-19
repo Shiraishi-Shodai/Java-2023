@@ -1,0 +1,9 @@
+StagingView_Presentation=TREE
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>\u306F\u3058\u3081\u3066\u306E\u30B3\u30DF\u30C3\u30C8</message>\r\n<message>\u30C6\u30B9\u30C8\u30B3\u30DF\u30C3\u30C8</message>\r\n</messages>
+eclipse.preferences.version=1
+repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<FilterCache/>
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300
+show_git_prefix_warning=false
+show_home_drive_warning=false
+show_initial_config_dialog=false

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="リソース名 &apos;Form01/src/main/webapp/form.jsp&apos; を &apos;Form.jsp&apos; に変更します" description="リソース &apos;form.jsp&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/form.jsp" name="Form.jsp" stamp="1682302151559" updateReferences="true"/>&#x0A;<refactoring comment="リソース名 &apos;Form01/src/main/java/example.java&apos; を &apos;Example.java&apos; に変更します" description="リソース &apos;example.java&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/example.java" name="Example.java" stamp="1682302163040" updateReferences="true"/>
+</session>

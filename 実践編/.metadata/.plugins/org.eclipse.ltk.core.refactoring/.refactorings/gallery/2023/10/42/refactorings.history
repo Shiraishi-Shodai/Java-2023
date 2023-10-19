@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;dao, model&apos; を &apos;java&apos; に移動" description="2 個のリソースを &apos;java&apos; に移動" destination="src/main/java" element1="/gallery_practice/src/main/java/dao" element2="/gallery_practice/src/main/java/model" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1697420393211" updateReferences="true"/>
+</session>
